@@ -70,7 +70,9 @@ namespace WebAtividadeEntrevista.Models
         /// <summary>
         /// CPF
         /// </summary>
-        [Required]
+        [Required(ErrorMessage = "CPF Obrigatório")]
+        [CustomValidationCPF(ErrorMessage = "CPF inválido")]
+        [RegularExpression(@"^\d{3}\.\d{3}\.\d{3}-\d{2}$", ErrorMessage = "Digite um CPF válido")]
         public string CPF { get; set; }
 
     }    

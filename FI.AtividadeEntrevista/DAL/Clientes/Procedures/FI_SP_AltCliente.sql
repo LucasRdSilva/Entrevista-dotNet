@@ -1,4 +1,6 @@
-﻿CREATE PROC FI_SP_AltCliente
+﻿DROP PROCEDURE IF EXISTS dbo.FI_SP_AltCliente;
+GO
+CREATE PROC FI_SP_AltCliente
     @NOME          VARCHAR (50) ,
     @SOBRENOME     VARCHAR (255),
 	@CPF		   VARCHAR (14),

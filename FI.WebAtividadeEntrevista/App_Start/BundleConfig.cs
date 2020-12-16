@@ -26,6 +26,12 @@ namespace WebAtividadeEntrevista
                       "~/Scripts/jtable/jquery.jtable.min.js",
                       "~/Scripts/jtable/localization/jquery.jtable.pt-BR.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquerymask").Include(
+                      "~/Scripts/jquery.mask.js"));
+
+            //bundles.Add(new ScriptBundle("~/bundles/jquerval").Include(
+            //          "~/Scripts/CustomValidation.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/clientes").Include(
                       "~/Scripts/Clientes/FI.Clientes.js"));
             bundles.Add(new ScriptBundle("~/bundles/listClientes").Include(

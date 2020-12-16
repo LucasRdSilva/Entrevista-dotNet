@@ -1,4 +1,6 @@
-﻿CREATE PROC FI_SP_IncClienteV2
+﻿DROP PROCEDURE IF EXISTS dbo.FI_SP_IncClienteV2;
+GO
+CREATE PROC FI_SP_IncClienteV2
     @NOME          VARCHAR (50) ,
     @SOBRENOME     VARCHAR (255),
 	@CPF		   VARCHAR (14),
